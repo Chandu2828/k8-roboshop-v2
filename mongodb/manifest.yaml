@@ -65,14 +65,14 @@ spec:
   selector: 
     matchLabels:
       project: roboshop 
-      component: roboshop 
+      component: mongodb 
       tier: db 
   volumeClaimTemplates:
   - metadata:
       name: mongodb 
     spec: 
       accessModes: ["ReadWriteOnce"]
-      storageClassName: ebs-sc 
+      storageClassName: roboshop-ebs 
       resources:
         requests:
           storage: 1Gi 
