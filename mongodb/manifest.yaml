@@ -12,7 +12,7 @@ spec:
   - protocol: TCP 
     port: 27017 # service port 
     targetPort: 27017 # container port 
-   clusterIP: None # headless service 
+  clusterIP: None # headless service 
   selector:
     project: roboshop 
     component: mongodb 
